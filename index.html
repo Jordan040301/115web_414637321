@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一個網頁</title>
+
+  <style>
+    /* ===== 整體：讓全部東西水平置中 ===== */
+    body {
+      text-align: center;
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* ===== 圖片：讓它變成區塊並置中 ===== */
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+    }
+
+    /* ===== 連結：加一點間距 ===== */
+    a {
+      margin: 0 8px;
+    }
+
+    /* ===== 清單：讓點點不要跑到最左邊 ===== */
+    ul, ol {
+      display: inline-block;   /* 讓清單變成一個區塊 */
+      text-align: left;        /* 清單內的文字靠左（比較整齊） */
+      padding-left: 20px;
+      margin: 0 auto;
+    }
+
+    /* ===== 表格：水平置中 ===== */
+    table {
+      margin: 20px auto;       /* 上下 20px，左右自動 => 水平置中 */
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px 20px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    /* ===== 標題與段落間距 ===== */
+    h1, h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>你好，這是我的不知道多少個網頁了</h1>
+  <p>我是淡江大學的學生，正在學習網頁程式設計。</p>
+
+  <a href="https://www.tku.edu.tw/">淡江大學</a>
+  <a href="about.html">關於我</a>
+  <a href="mailto:0989391413adcb@gmail.com">寄信給我</a>
+  <a href="https://github.com/Jordan040301/115web_414637321" target="_blank" rel="noreferrer">GitHub</a>
+
+  <img src="images.png" alt="可愛的動物">
+
+  <h2>我的興趣</h2>
+  <ul>
+    <li>打球</li>
+    <li>看動漫</li>
+    <li>玩遊戲</li>
+    <li>玩遊戲</li>
+    <li>學習程式設計</li>
+  </ul>
+
+  <h2>建立網頁的步驟</h2>
+  <ol>
+    <li>建立 HTML 文件</li>
+    <li>加入內容</li>
+    <li>在瀏覽器檢查結果</li>
+  </ol>
+
+  <table>
+    <caption>本學期學習內容</caption>
+    <thead>
+      <tr>
+        <th scope="col">週次</th>
+        <th scope="col">主題</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Week 1</td>
+        <td>GitHub 與開發環境</td>
+      </tr>
+      <tr>
+        <td>Week 2</td>
+        <td>Git 基礎與版本控制</td>
+      </tr>
+      <tr>
+        <td>Week 3</td>
+        <td>HTML 網頁基礎</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <span>以下是我的個人網站</span>
+  </div>
+
+  <header>
+    <h1>我的個人網站</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>自我介紹</h2>
+      <p>我目前就讀淡江大學三年級的資管系，但我應該要大學畢業了，因為我是轉學生，所以還在修，之後也打算繼續在淡江讀碩士。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 蔡承澤</p>
+  </footer>
+
+</body>
+</html>
